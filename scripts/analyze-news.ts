@@ -261,7 +261,7 @@ async function main(): Promise<void> {
   const finnhubKey = process.env.FINNHUB_API_KEY?.trim();
   const geminiKey = process.env.GEMINI_API_KEY?.trim();
   const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL?.trim();
-  const geminiModel = (process.env.GEMINI_MODEL?.trim()) || 'gemini-3.8-flash';
+  const geminiModel = (process.env.GEMINI_MODEL?.trim()) || 'gemini-3.5-flash-lite';
 
   if (!finnhubKey) {
     logError('FINNHUB_API_KEY environment variable is missing.');
